@@ -1,0 +1,201 @@
+html body{
+    margin:0px;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+
+body{
+    background-image: url("Pics/111.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+.header-div{
+   /** padding-top: 20px;**/
+    padding-bottom: 60px;
+}
+
+@keyframes header-hover {
+    from { background-color: rgba(0,0,0,0)}
+    to {background-color:white}
+}
+
+@keyframes header-hover-end {
+    from {background-color:white}
+    to {background-color: rgba(0,0,0,0)}
+}
+
+.header-div:hover{
+   animation-name: header-hover ;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.header-div:not(:hover){
+    animation-name: header-hover-end ;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.header-icon{
+    height:60px;
+    padding-top: 20px;
+
+}
+
+.header-list{
+    list-style-type: none;
+    margin-left: 100px;
+    margin-top: -45px;
+
+}
+
+.header-list li{
+    display:inline;
+    padding-left: 20px;
+}
+
+.header-list a {
+    text-decoration:none;
+    color: black;
+}
+
+.header-list a:hover {
+    text-decoration: black;
+    text-decoration-line:underline;
+}
+
+.sec-header-list{
+    list-style-type: none;
+    margin-top: -33px;
+    margin-right: 400px;
+
+}
+.sec-header-list li{
+    display: flow;
+    float: right;
+    padding-right: 50px;
+}
+
+.list-search{
+    height:25px
+}
+
+.list-like{
+    height:25px
+}
+
+.list-shop{
+    height:25px;
+}
+
+.header-btn{
+    display: flow;
+    float:right;
+    margin-top: -10px;
+    margin-right: -400px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0 );
+    border-radius: 30px;
+    font-size: 1em;
+    height: 50px;
+    width: auto;
+}
+
+.header-btn:hover{
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 1em;
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+@keyframes btn-hover {
+    from{bottom:0px; right:0px}
+    to {bottom:5px; right:5px}
+}
+
+@keyframes btn-hover-end {
+    from{bottom:5px; right:5px}
+    to {bottom:0px; right:0px}
+}
+
+.btn-hover:hover{
+    animation-name: btn-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.btn-hover:not(:hover){
+    animation-name: btn-hover-end;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+
+.btn-hover{
+    position: relative;
+}
+
+.header-text{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 6em;
+
+}
+
+.header-text-two{
+
+    margin-left: 100px;
+    font-size: 10em;
+
+}
+
+.bottom-text{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 2em;
+}
+
+
+.bottom-text-two{
+
+    margin-left: 100px;
+    font-size: 2em;
+}
+
+
+.footer-btn{
+    color: black;
+    background-color: rgba(0, 0, 0, 0 );
+    border-radius: 40px;
+    font-size: 2em;
+    height: 60px;
+    width: auto;
+   border: solid black 3px;
+    margin-left: 100px;
+    margin-top:50px ;
+}
+
+.footer-btn:hover{
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+    font-size: 2em;
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+}
+
+
+
+
